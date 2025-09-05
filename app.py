@@ -1,21 +1,31 @@
+#!/usr/bin/env python
 
 import os
 import sys
 from pathlib import Path
 
-# เพิ่ม project path ให้ Python รู้จัก
+# Add project root to Python path
 BASE_DIR = Path(__file__).resolve().parent
-sys.path.append(str(BASE_DIR))
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
 
-# ตั้งค่า Django settings
+# Set Django settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
 
-# Import Django หลังจากตั้งค่าแล้ว
+# Configure Django
 import django
+from django.conf import settings
+from django.core.wsgi import get_wsgi_application
+
+# Initialize Django
 django.setup()
 
-from django.core.wsgi import get_wsgi_application
+# Create WSGI application
 application = get_wsgi_application()
 
-# สำหรับ Vercel
-app = application
+# For Vercel
+def app(environ, start_response):
+    return application(environ, start_response)
+
+# Alternative export
+handler = application
