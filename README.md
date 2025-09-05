@@ -1,8 +1,8 @@
 # vercel-supabase1 💰
 
 โปรเจกต์นี้เป็น **เว็บแอปบันทึกรายรับ-รายจ่าย** โดยใช้  
-- [Vercel](https://vercel.com) สำหรับการ Deploy  
-- [Supabase](https://supabase.com) สำหรับฐานข้อมูล  
+- [Vercel](https://vercel-supabase1-u7jz.vercel.app/) สำหรับการ Deploy  
+- [Supabase](https://supabase.com/dashboard/project/mpbungacnrcrpjdxvnpr) สำหรับฐานข้อมูล  
 
 ## 🚀 ฟีเจอร์
 - เพิ่ม/ลบ/แก้ไข รายการรายรับและรายจ่าย  
@@ -18,5 +18,5 @@
 ## 📦 การติดตั้งและใช้งาน
 1. Clone โปรเจกต์  
    ```bash
-   git clone https://github.com/your-username/vercel-supabase1.git
-   cd vercel-supabase1
+   git clone https://github.com/Tmlcf/vercel-supabase1.git
+   cd supabase_vercel
