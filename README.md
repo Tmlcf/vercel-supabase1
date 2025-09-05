@@ -21,7 +21,7 @@
    git clone https://github.com/Tmlcf/vercel-supabase1.git
    cd supabase_vercel
    จัดทำโดย
-  นายธีรภัทร อินทโร
+   นายธีรภัทร อินทโร
    นายพชรพล พุ่มพิน
    นายอภิสิทธิ์ สุนันท์
    นายสิทธินันท์ ชัยสิทธิ์
